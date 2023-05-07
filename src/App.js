@@ -10,6 +10,8 @@ import {
 } from "react-router-dom";
 import Footer from "./components/Footer";
 import { Analytics } from '@vercel/analytics/react';
+import { isMobile } from 'react-device-detect';
+
 
 function App() {
     const [load, upadateLoad] = useState(true);
@@ -21,19 +23,30 @@ function App() {
 
         return () => clearTimeout(timer);
     }, []);
-    return (
-        <Router>
-            <Preloader load={load} />
-            <div className="App">
-                <Navbar />
-                <Routes>
-                    <Route path="/" element={<Home />} />
-                </Routes>
-                <Footer />
+
+    if (isMobile) {
+        return (
+            <div>
+                Comming soon
             </div>
-            <Analytics />
-        </Router>
-    );
+        )
+    }
+    else {
+        return (
+            <Router>
+                <Preloader load={load} />
+                <div className="App">
+                    <Navbar />
+                    <Routes>
+                        <Route path="/" element={<Home />} />
+                    </Routes>
+                    <Footer />
+                </div>
+                <Analytics />
+            </Router>
+        );
+    }
+
 }
 
 
