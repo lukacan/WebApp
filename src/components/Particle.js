@@ -38,44 +38,42 @@ function Particle() {
                             fillColor: "#000000",
                             length: 3
                         }
-                    }
+                    },
+                    repulse: {}
                 },
                 detectRetina: true,
                 background: {
                     color: "#000"
                 },
-                emitters: {
-                    direction: "none",
+                emitters: [{
+                    direction: "top-left",
                     rate: {
-                        delay: 0.25,
-                        quantity: 10
+                        delay: 1,
+                        quantity: 4
                     },
                     position: {
-                        x: 50,
-                        y: 50
+                        x: 70,
+                        y: 75
                     },
-                    size: {
-                        width: 0,
-                        height: 0
-                    },
-                    spawnColor: {
-                        value: "#ff0000",
-                        animation: {
-                            h: {
-                                enable: true,
-                                speed: 5
-                            },
-                            l: {
-                                enable: true,
-                                speed: 0,
-                                offset: {
-                                    min: 20,
-                                    max: 80
-                                }
-                            }
-                        }
+                    life: {
+                        count: 10
                     }
-                }
+                },
+                {
+                    direction: "top-right",
+                    rate: {
+                        delay: 1,
+                        quantity: 4
+                    },
+                    position: {
+                        x: 70,
+                        y: 75
+                    },
+                    life: {
+                        count: 10
+                    }
+                },],
+
             }}
         />
     );
