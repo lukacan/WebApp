@@ -27,7 +27,7 @@ function App() {
     if (isMobile) {
         return (
             <div>
-                Comming soon
+                Comming soon, But I can be opened on Desktop
             </div>
         )
     }
