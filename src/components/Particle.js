@@ -28,7 +28,7 @@ function Particle() {
                     move: {
                         enable: true,
                         size: true,
-                        speed: 2,
+                        speed: 3,
                         direction: "none",
                         outModes: {
                             default: "destroy"
@@ -41,6 +41,7 @@ function Particle() {
                     },
                     repulse: {}
                 },
+                fullScreen: { enable: false },
                 detectRetina: true,
                 background: {
                     color: "#000"
@@ -48,8 +49,8 @@ function Particle() {
                 emitters: [{
                     direction: "top-left",
                     rate: {
-                        delay: 1,
-                        quantity: 4
+                        delay: 0.5,
+                        quantity: 8
                     },
                     position: {
                         x: 70,
@@ -62,16 +63,13 @@ function Particle() {
                 {
                     direction: "top-right",
                     rate: {
-                        delay: 1,
-                        quantity: 4
+                        delay: 0.5,
+                        quantity: 5
                     },
                     position: {
                         x: 70,
                         y: 75
                     },
-                    life: {
-                        count: 10
-                    }
                 },],
 
             }}

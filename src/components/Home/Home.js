@@ -7,10 +7,11 @@ import About from "../About/About.js"
 function Home() {
     return (
         <section>
-            <Container fluid className="home-section" id="home">
-                <Container className="home-content">
-                    <Particle />
+            <Particle />
 
+            <Container fluid className="home-section" id="home">
+
+                <Container className="home-content">
                     <Row md={8} className="home-header">
                         <h1 style={{ paddingBottom: 15 }} className="heading">
                             Hi There!{" "}
@@ -23,6 +24,7 @@ function Home() {
                         <div style={{ padding: 50, textAlign: "left" }}>
                             <Type />
                         </div>
+
                     </Row>
                 </Container>
             </Container>
