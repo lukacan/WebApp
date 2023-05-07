@@ -190,6 +190,9 @@ button:focus {
     }
 }
 
+/* --------- */
+/* About  section */
+/* --------- */
 .home-about-section {
     position: relative;
     padding-bottom: 70px !important;
@@ -210,6 +213,9 @@ button:focus {
     text-align: right;
 }
 
+/* --------- */
+/* About Socials section */
+/* --------- */
 .home-about-social {
     text-align: center !important;
     padding-top: 25px;
@@ -270,6 +276,29 @@ button:focus {
 
 .icon-colour {
     color: #58b6ef !important;
+}
+
+/* --------- */
+/* Mint section */
+/* --------- */
+.home-mint-section {
+    position: relative;
+    padding-bottom: 70px !important;
+    padding-top: 70px !important;
+    background-color: #000000;
+}
+
+.home-mint-description {
+    color: white !important;
+    padding-top: 100px !important;
+    padding-bottom: 20px !important;
+    text-align: center;
+}
+
+.home-mint-body {
+    padding-top: 50px;
+    font-size: 1.3em !important;
+    text-align: center;
 }
 
 /* --------- */

@@ -6,6 +6,7 @@ import Container from "react-bootstrap/Container";
 import {
     AiOutlineHome,
     AiOutlineUser,
+    AiOutlineWallet
 } from "react-icons/ai";
 
 
@@ -29,6 +30,11 @@ function NavBar() {
                     <Nav.Item>
                         <Nav.Link onClick={() => scrollToSec("about")}>
                             <AiOutlineUser style={{ marginBottom: "2px" }} /> About
+                        </Nav.Link>
+                    </Nav.Item>
+                    <Nav.Item>
+                        <Nav.Link onClick={() => scrollToSec("mint")}>
+                            <AiOutlineWallet style={{ marginBottom: "2px" }} /> Mint Me!
                         </Nav.Link>
                     </Nav.Item>
                 </Nav>

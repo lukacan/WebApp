@@ -12,6 +12,8 @@ import Footer from "./components/Footer";
 import { Analytics } from '@vercel/analytics/react';
 import { isMobile } from 'react-device-detect';
 
+import About from "./components/About/About.js"
+import Mint from "./components/Mint/Mint.js"
 
 function App() {
     const [load, upadateLoad] = useState(true);
@@ -40,6 +42,8 @@ function App() {
                     <Routes>
                         <Route path="/" element={<Home />} />
                     </Routes>
+                    <About />
+                    <Mint />
                     <Footer />
                 </div>
                 <Analytics />

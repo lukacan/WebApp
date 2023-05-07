@@ -10,6 +10,7 @@ function Footer() {
                 <Col md="4" className="footer-copywright">
                     <h3>Designed and Developed by Andrej Lukačovič</h3>
                 </Col>
+                <Col></Col>
                 <Col md="4" className="footer-copywright">
                     <h3>Copyright © {year} Andrej Lukačovič</h3>
                 </Col>

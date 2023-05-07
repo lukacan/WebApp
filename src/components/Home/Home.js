@@ -24,11 +24,10 @@ function Home() {
                         <div style={{ padding: 50, textAlign: "left" }}>
                             <Type />
                         </div>
-
                     </Row>
                 </Container>
             </Container>
-            <About />
+
         </section >
     );
 }

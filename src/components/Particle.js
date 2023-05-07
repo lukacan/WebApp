@@ -49,7 +49,7 @@ function Particle() {
                 emitters: [{
                     direction: "top-left",
                     rate: {
-                        delay: 0.5,
+                        delay: 0.25,
                         quantity: 8
                     },
                     position: {
@@ -63,15 +63,14 @@ function Particle() {
                 {
                     direction: "top-right",
                     rate: {
-                        delay: 0.5,
-                        quantity: 5
+                        delay: 0.25,
+                        quantity: 8
                     },
                     position: {
                         x: 70,
                         y: 75
                     },
                 },],
-
             }}
         />
     );
