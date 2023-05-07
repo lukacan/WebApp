@@ -8,8 +8,9 @@ function Home() {
     return (
         <section>
             <Container fluid className="home-section" id="home">
-                <Particle />
                 <Container className="home-content">
+                    <Particle />
+
                     <Row md={8} className="home-header">
                         <h1 style={{ paddingBottom: 15 }} className="heading">
                             Hi There!{" "}
