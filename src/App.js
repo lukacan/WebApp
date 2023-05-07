@@ -9,7 +9,7 @@ import {
     Routes,
 } from "react-router-dom";
 import Footer from "./components/Footer";
-
+import { Analytics } from '@vercel/analytics/react';
 
 function App() {
     const [load, upadateLoad] = useState(true);
@@ -31,6 +31,7 @@ function App() {
                 </Routes>
                 <Footer />
             </div>
+            <Analytics />
         </Router>
     );
 }
